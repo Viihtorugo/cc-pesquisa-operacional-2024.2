@@ -10,33 +10,66 @@ int main()
     {
         IloModel model(env);
 
-        IloNumVar sol_a (env, 0.0, IloInfinity, ILOFLOAT, "SolA");
-        IloNumVar sol_b (env, 0.0, IloInfinity, ILOFLOAT, "SolB");
-        IloNumVar sec (env, 0.0, IloInfinity, ILOFLOAT, "SEC");
-        IloNumVar cor (env, 0.0, IloInfinity, ILOFLOAT, "COR");
+        IloNumVar sol_a_sn (env, 0.0, IloInfinity, ILOFLOAT, "SolASN");
+        IloNumVar sol_a_sr (env, 0.0, IloInfinity, ILOFLOAT, "SolASR");
+        IloNumVar sol_b_sn (env, 0.0, IloInfinity, ILOFLOAT, "SolBSN"); 
+        IloNumVar sol_b_sr (env, 0.0, IloInfinity, ILOFLOAT, "SolBSR");
+        IloNumVar sec_sn (env, 0.0, IloInfinity, ILOFLOAT, "SECSN");
+        IloNumVar sec_sr (env, 0.0, IloInfinity, ILOFLOAT, "SECSR");
+        IloNumVar cor_sn (env, 0.0, IloInfinity, ILOFLOAT, "CORSN");
+        IloNumVar cor_sr (env, 0.0, IloInfinity, ILOFLOAT, "CORSR");
         
 
         /* 
-            Lucro = Valor de venda - Custo de produção
-            Lucro = 20 - (5 * 1 + 4 * 1) = 11
-            Lucro = 30 - (2 * 1 + 4 * 4) = 12
+            Custo = somatorio da produção da tinta
         */ 
-        IloObjective obj = IloMinimize(env, 1.5 * sol_a + 1 * sol_b + 4 * sec + 6 * cor);
+        IloObjective obj = IloMinimize(env, 1.5 * (sol_a_sn + sol_a_sr) + 1 * (sol_b_sn + sol_b_sr) + 4 * (sec_sn + sec_sr) + 6 * (cor_sn + cor_sr));
         model.add(obj);
 
-        model.add(sec + sol_a * 0.3 + 0.6 * sol_b >= 300);
-        model.add(cor + sol_a * 0.7 + 0.4 * sol_b >= 625);
-        model.add(sec + sol_a + sol_b + cor == 1250);
+        //Quantidade de SEC
+        model.add(sec_sn + sol_a_sn * 0.3 + 0.6 * sol_b_sn >= 50);
+        model.add(sec_sr + sol_a_sr * 0.3 + 0.6 * sol_b_sr >= 250);
+
+        //Quantidade do COR
+        model.add(cor_sn + sol_a_sn * 0.7 + 0.4 * sol_b_sn >= 125);
+        model.add(cor_sr + sol_a_sr * 0.7 + 0.4 * sol_b_sr >= 500);
+        
+        //Total para produzir SR
+        model.add(sec_sr + sol_a_sr + sol_b_sr + cor_sr == 1000);
+        //Total para produzir SN
+        model.add(sec_sn + sol_a_sn + sol_b_sn + cor_sn == 250);
 
         cout << fixed << setprecision(2);
         IloCplex cplex(model);
         cplex.solve();
+        
+        double sol_a =  cplex.getValue(sol_a_sn) + cplex.getValue(sol_a_sr);
+        double sol_b =  cplex.getValue(sol_b_sn) + cplex.getValue(sol_b_sr);
+        double sec =  cplex.getValue(sec_sn) + cplex.getValue(sec_sr);
+        double cor =  cplex.getValue(cor_sn) + cplex.getValue(cor_sr);
 
-        cout << "Quantidade das variáveis: \n\n";
-        cout << "Sol A: " << cplex.getValue(sol_a) << endl;
-        cout << "Sol B: " << cplex.getValue(sol_b) << endl;
-        cout << "  SEC: " << cplex.getValue(sec) << endl;
-        cout << "  COR: " << cplex.getValue(cor) << endl << endl;
+        cout << "Tinta Secagem Rapida: \n\n";
+
+        double total_sr = cplex.getValue(cor_sr) + cplex.getValue(sol_a_sr) + cplex.getValue(sol_b_sr) + cplex.getValue(sec_sr);
+        cout << "Sol A: " << cplex.getValue(sol_a_sr) << endl;
+        cout << "Sol B: " << cplex.getValue(sol_b_sr) << endl;
+        cout << "  SEC: " << cplex.getValue(sec_sr) << endl;
+        cout << "  COR: " << cplex.getValue(cor_sr) << endl << endl;
+        cout << "Total: " << total_sr << " litros" <<  endl << endl;
+
+        double total_sn = cplex.getValue(cor_sn) + cplex.getValue(sol_a_sn) + cplex.getValue(sol_b_sn) + cplex.getValue(sec_sn);
+        cout << "Tinta Secagem Normal: \n\n";
+        cout << "Sol A: " << cplex.getValue(sol_a_sn) << endl;
+        cout << "Sol B: " << cplex.getValue(sol_b_sn) << endl;
+        cout << "  SEC: " << cplex.getValue(sec_sn) << endl;
+        cout << "  COR: " << cplex.getValue(cor_sn) << endl;
+        cout << "Total: " << total_sn << " litros" << endl << endl;
+
+        cout << "\n\nQuantidade das variáveis: \n\n";
+        cout << "Sol A: " << sol_a << endl;
+        cout << "Sol B: " << sol_b << endl;
+        cout << "  SEC: " << sec << endl;
+        cout << "  COR: " << cor << endl << endl;
         
         cout << "Custo mínimo: " << cplex.getObjValue() << endl;
 

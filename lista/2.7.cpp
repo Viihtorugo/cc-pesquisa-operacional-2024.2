@@ -33,8 +33,9 @@ int main()
         {
             IloExpr sum(env);
 
-            for (int j = 4; j >= 0; j--)
-                sum += x[ ((i - j) + 7) % 7 ];
+            //trabalhou 5 dias consecutivos
+            for (int j = 0; j < 5; j++)
+                sum += x[ (i - j + 7) % 7 ];
             
             model.add(sum >= d[i]);
         }

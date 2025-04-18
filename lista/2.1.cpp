@@ -15,7 +15,8 @@ int main()
 
         /* 
             Lucro = Valor de venda - Custo de produção
-            Lucro = 20 - (5 * 1 + 4 * 1)
+            Lucro = 20 - (5 * 1 + 4 * 1) = 11
+            Lucro = 30 - (2 * 1 + 4 * 4) = 12
         */ 
         IloObjective obj = IloMaximize(env, 11 * x_amgs + 12 * x_re);
         model.add(obj);

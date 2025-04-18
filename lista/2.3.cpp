@@ -36,20 +36,23 @@ int main()
 
         model.add(IloMaximize(env, obj));
 
+        //restrição do tamanho da area da fazenda
         vector <double> area_fazenda;
         area_fazenda.push_back(400);
         area_fazenda.push_back(600);
         area_fazenda.push_back(350);
+
+        //restrição da qtd de agua de cada fazenda
+        vector <double> total_agua_area;
+        total_agua_area.push_back(1800);
+        total_agua_area.push_back(2200);
+        total_agua_area.push_back(950);
 
         vector <double> agua_area;
         agua_area.push_back(5.5);
         agua_area.push_back(4);
         agua_area.push_back(3.5);
         
-        vector <double> total_agua_area;
-        total_agua_area.push_back(1800);
-        total_agua_area.push_back(2200);
-        total_agua_area.push_back(950);
 
         for (int i = 0; i < 3; ++i)
         {
@@ -57,6 +60,7 @@ int main()
             model.add(agua_area[0] * x[i][0] + agua_area[1] * x[i][1] + agua_area[2] * x[i][2] <= total_agua_area[i]);
         }
         
+        //Restrição da area max de cada cultura
         vector <double> area_max;
         area_max.push_back(660);
         area_max.push_back(880);

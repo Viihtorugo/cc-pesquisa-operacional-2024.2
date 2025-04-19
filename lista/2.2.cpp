@@ -69,7 +69,6 @@ void solve ()
         model.add(res_c >= 19);
 
         IloCplex cplex(model);
-        
         cplex.solve();
 
         for (int i = 0; i < 6; ++i)

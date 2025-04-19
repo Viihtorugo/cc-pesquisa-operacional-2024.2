@@ -10,7 +10,8 @@ int main()
     {
         IloModel model(env);
 
-        int n = 9, m = 11;
+        /*
+        int n = 9;
         vector<vector<int>> g(n, vector<int>());
 
         g[0].push_back(1);
@@ -35,6 +36,41 @@ int main()
         g[7].push_back(6);
         g[5].push_back(8);
         g[8].push_back(5);
+        */
+
+        //grafo completo 4 vert
+        int n = 5;
+        vector<vector<int>> g(n, vector<int>());
+        
+        g[0].push_back(1);
+        g[1].push_back(0);
+
+        g[0].push_back(2);
+        g[2].push_back(0);
+
+        g[0].push_back(3);
+        g[3].push_back(0);
+
+        g[0].push_back(4);
+        g[4].push_back(0);
+
+        g[1].push_back(2);
+        g[2].push_back(1);
+
+        g[1].push_back(3);
+        g[3].push_back(1);
+
+        g[1].push_back(4);
+        g[4].push_back(1);
+
+        g[2].push_back(3);
+        g[3].push_back(2);
+
+        g[2].push_back(4);
+        g[4].push_back(2);
+
+        g[3].push_back(4);
+        g[4].push_back(3);
 
         IloNumVarArray x(env, n);
 
@@ -64,7 +100,7 @@ int main()
         IloCplex cplex(model);
         cplex.solve();
 
-        cout << "Número minimos de frequências: " << cplex.getObjValue() << endl
+        cout << "Número minimo de frequências: " << cplex.getObjValue() << endl
              << endl;
 
         cout << "Cores dos vertices:\n";

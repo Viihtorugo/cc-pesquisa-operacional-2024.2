@@ -48,8 +48,7 @@ int main()
         //Função Objetivo
         IloExpr obj(env);
         
-        for (int i = 0; i < n; ++
-        i)
+        for (int i = 0; i < n; ++i)
             obj += x[i];
 
         model.add(IloMinimize(env, obj));

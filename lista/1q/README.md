@@ -111,9 +111,12 @@ O formato do arquivo deve respeitar as seguintes caracteristicas:
 make 1q
 ```
 
-Print dos resultados:
+Print atualizando o bin:
+
+![Captura de tela 2025-04-19 222654](https://github.com/user-attachments/assets/2784571f-b9b6-453e-a187-58f0cbd74d4a)
+
+Verificando se o resultado possui todos items e a melhor solução:
 
 ![Captura de tela 2025-04-19 222706](https://github.com/user-attachments/assets/9b36d825-6c80-4c67-b2e7-1191b018673c)
-![Captura de tela 2025-04-19 222654](https://github.com/user-attachments/assets/2784571f-b9b6-453e-a187-58f0cbd74d4a)
 
 ---

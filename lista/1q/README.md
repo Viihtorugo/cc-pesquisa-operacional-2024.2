@@ -33,7 +33,7 @@ g++ main.cpp -o main
 ## 🧪 Execução
 
 ```bash
-./main <tempo_em_segundos>
+./main <int: tempo_em_segundos>
 ```
 
 ### 📥 Entrada (via stdin):
@@ -51,7 +51,7 @@ g++ main.cpp -o main
 ### 📥 Entrada (via arquivo):
 
 ```bash
-./bin_packing <tempo_em_segundos> < nomedoarquivo
+./bin_packing <int: tempo_em_segundos> < nomedoarquivo
 ```
 
 O formato do arquivo deve respeitar as seguintes caracteristicas: 
@@ -104,9 +104,16 @@ O formato do arquivo deve respeitar as seguintes caracteristicas:
 ## 📊 Resultados
 
 - Utilizando o makefile no diretorio lista:
+  - Executa com 10 segundos;
+  - Entrada é o input/2.in
 
 ```bash
 make 1q
 ```
+
+Print dos resultados:
+
+![Captura de tela 2025-04-19 222706](https://github.com/user-attachments/assets/9b36d825-6c80-4c67-b2e7-1191b018673c)
+![Captura de tela 2025-04-19 222654](https://github.com/user-attachments/assets/2784571f-b9b6-453e-a187-58f0cbd74d4a)
 
 ---

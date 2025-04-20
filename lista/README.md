@@ -37,7 +37,7 @@ Executar o código:
 
 ## Questão 2:
 
-Cada modelo está implementada em C++, em que, tem 13 modelos e pode ser executado através do makefile. 
+Cada modelo está implementada em C++, em que, tem 13 modelos e pode ser executado através do makefile.
 
 ### Problema da ração
 
@@ -118,3 +118,5 @@ make 2q/2.12
 ```bash
 make 2q/2.13
 ```
+
+Verifique os códigos no [diretório `2q`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/tree/main/lista/2q)

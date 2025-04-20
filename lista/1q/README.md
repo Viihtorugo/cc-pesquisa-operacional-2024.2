@@ -118,5 +118,3 @@ Print atualizando o bin:
 Verificando se o resultado possui todos items e a melhor solução:
 
 ![Captura de tela 2025-04-19 222706](https://github.com/user-attachments/assets/9b36d825-6c80-4c67-b2e7-1191b018673c)
-
----

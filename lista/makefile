@@ -1,4 +1,4 @@
-lista/%: clear
+2q/%: clear
 	@echo "Compilando $@ -> bin/main"
 	g++ $@.cpp -o bin/main \
 		-I/opt/ibm/ILOG/CPLEX_Studio_Community2212/cplex/include/ \

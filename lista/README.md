@@ -1,12 +1,12 @@
 # Lista
 
 Aluno: Victor Hugo Silva Ângelo
+Curso: Ciência da Computação
 
 ---
 ## Questão 1:
 
-Explicação como foi resolvido está no diretorio 1q
-[Ver diretório `1q`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/tree/main/lista/1q)
+Explicação como foi resolvido está no [diretório `1q`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/tree/main/lista/1q)
 
 Caso queria executar aqui tem um makefile:
 

@@ -1,7 +1,8 @@
 # Lista
 
-Aluno: Victor Hugo Silva Ângelo
-Curso: Ciência da Computação
+Aluno: Victor Hugo Silva Ângelo.
+
+Curso: Ciência da Computação.
 
 ---
 ## Questão 1:

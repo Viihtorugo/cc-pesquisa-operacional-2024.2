@@ -15,9 +15,19 @@ make 1q
 ```
 Dentro do makefile está configurado para executar em 10 segundos e a entrada é o arquivo [Ver arquivo `2.in`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/blob/main/lista/1q/input/2.in)
 
+Crie o diretorio bin:
+
+```bash
+mkdir bin
+```
+
+Compilar o código:
+
 ```bash
 g++ 1q/main.cpp -o bin/main
 ```
+
+Executar o código:
 
 ```bash
 ./bin/main 10 < 1q/input/2.in

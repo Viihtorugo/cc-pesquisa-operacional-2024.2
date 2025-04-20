@@ -13,7 +13,7 @@ Caso queria executar aqui tem um makefile:
 ```bash
 make 1q
 ```
-Dentro do makefile está configurado para executar em 10 segundos e a entrada é o arquivo [Ver arquivo `2.in`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/blob/main/lista/1q/input/2.in)
+Dentro do makefile está configurado para executar em 10 segundos e a entrada é o [arquivo `2.in`](https://github.com/Viihtorugo/cc-pesquisa-operacional-2024.2/blob/main/lista/1q/input/2.in)
 
 Crie o diretorio bin:
 

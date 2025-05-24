@@ -1,6 +1,6 @@
 # 📦 Bin Packing com GRASP + First Improvement (C++)
 
-Este projeto implementa uma solução baseada em meta-heurística para o problema de *Bin Packing*, utilizando o método **GRASP (Greedy Randomized Adaptive Search Procedure)** combinado com uma **busca local do tipo First Improvement**.
+Este projeto implementa uma solução baseada em meta-heurística para o problema de *Bin Packing*, utilizando o método **GRASP (Greedy Randomized Adaptive Search Procedure)** combinado com uma **busca local do tipo First Improvement**. Os bins tem capacidade máxima de 1.
 
 ---
 
@@ -39,7 +39,7 @@ g++ main.cpp -o main
 ### 📥 Entrada (via stdin):
 
 ```
-<capacidade_max_bin> <quantidade_itens> <RCL_size>
+<quantidade_itens> <RCL_size>
 <tamanho_item_1>
 <tamanho_item_2>
 ...
@@ -57,7 +57,7 @@ g++ main.cpp -o main
 O formato do arquivo deve respeitar as seguintes caracteristicas: 
 
 ```
-<int: capacidade do bin> <int: quantidade_itens> <int: RCL_size>
+<int: quantidade_itens> <int: RCL_size>
 <double: tamanho_item_1>
 <double: tamanho_item_2>
 ...
@@ -113,8 +113,8 @@ make 1q
 
 Print atualizando o bin:
 
-![Captura de tela 2025-04-19 222654](https://github.com/user-attachments/assets/2784571f-b9b6-453e-a187-58f0cbd74d4a)
+![Captura de tela 2025-05-24 000712](https://github.com/user-attachments/assets/2e19e184-20a6-4558-bcfc-7b0668120ac3)
 
 Verificando se o resultado possui todos items e a melhor solução:
 
-![Captura de tela 2025-04-19 222706](https://github.com/user-attachments/assets/9b36d825-6c80-4c67-b2e7-1191b018673c)
+![Captura de tela 2025-05-24 000511](https://github.com/user-attachments/assets/8d7d3f3b-ae59-4a57-9a7d-6aaddba74142)

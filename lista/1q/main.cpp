@@ -39,7 +39,7 @@ bin create_bin()
     return b;
 }
 
-vector<bin> greedy_randomized_construction(vector<item> items, int RCL_size, double cap)
+vector<bin> greedy_randomized_construction(vector<item> items, int RCL_size)
 {
     vector<bin> bins;
     random_device rd;
@@ -60,7 +60,7 @@ vector<bin> greedy_randomized_construction(vector<item> items, int RCL_size, dou
         bool placed = false;
         for (auto &b : bins)
         {
-            if (b.cap + current.tam <= cap)
+            if (b.cap + current.tam <= 1.0)
             {
                 b.cap += current.tam;
                 b.items.push_back(current);
@@ -80,7 +80,7 @@ vector<bin> greedy_randomized_construction(vector<item> items, int RCL_size, dou
     return bins;
 }
 
-vector<bin> first_improvement(vector<bin> bins, double cap)
+vector<bin> first_improvement(vector<bin> bins)
 {
 
     for (int i = 0; i < bins.size(); i++)
@@ -94,7 +94,7 @@ vector<bin> first_improvement(vector<bin> bins, double cap)
                 if (k == i)
                     continue;
 
-                if (bins[k].cap + current.tam <= cap)
+                if (bins[k].cap + current.tam <= 1.0)
                 {
                     vector<bin> new_bins = bins;
 
@@ -121,17 +121,17 @@ vector<bin> first_improvement(vector<bin> bins, double cap)
     return bins;
 }
 
-vector<bin> grasp(vector<item> items, int n, double cap, int rcl, int seg)
+vector<bin> grasp(vector<item> items, int n, int rcl, int seg)
 {
-    vector<bin> best_bin = greedy_randomized_construction(items, rcl, cap);
+    vector<bin> best_bin = greedy_randomized_construction(items, rcl);
     int best_rating = rating(best_bin);
 
     auto start = high_resolution_clock::now();
 
     while (duration_cast<seconds>(high_resolution_clock::now() - start).count() < seg)
     {
-        vector<bin> aux_bin = greedy_randomized_construction(items, rcl, cap);
-        aux_bin = first_improvement(aux_bin, cap);
+        vector<bin> aux_bin = greedy_randomized_construction(items, rcl);
+        aux_bin = first_improvement(aux_bin);
         int aux_rating = rating(aux_bin);
 
         if (aux_rating < best_rating)
@@ -162,7 +162,7 @@ void print_bins(vector<bin> bins)
         cout << endl;
     }
 
-    cout << "\nA solução tem " << rating(bins) << " bins\n\n";
+    cout << "\nA melhor solução que ele encontrou tem " << rating(bins) << " bins\n\n";
 }
 
 bool check_seg(char seg[])
@@ -200,8 +200,7 @@ int main(int argc, char *argv[])
     int seg = atoi(argv[1]);
 
     int n, rcl;
-    double cap;
-    cin >> cap >> n >> rcl;
+    cin >> n >> rcl;
 
     vector<item> items;
     for (int i = 0; i < n; i++)
@@ -214,7 +213,7 @@ int main(int argc, char *argv[])
 
     // sort(items.begin(), items.end(), compara_tam);
 
-    vector<bin> bins = grasp(items, n, cap, rcl, seg);
+    vector<bin> bins = grasp(items, n, rcl, seg);
     print_bins(bins);
     cout << "\nVerificando a quantidade de items nos bins\nTotal: " << count_items_bins(bins) << "\n";
 

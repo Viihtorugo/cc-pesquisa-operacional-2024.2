@@ -1,0 +1,267 @@
+Carregando o grafo do centro de Maceió...
+Grafo carregado.
+
+Nós selecionados para semáforos (especificados): [431009226, 2574513689]
+Semáforo no nó 431009226: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo configurado no nó 431009226.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo configurado no nó 2574513689.
+
+Criando 200 veículos com origens em [430590284, 1395054649] e destino em 7258919449...
+
+Iniciando simulação com semáforos com heurística de equalização de filas...
+
+--- Tempo de simulação: 0s (0 min) ---
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 431009226: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 2574513689: Nova duração da fase 2 (demanda: 0, total: 50) -> 10.00s
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 431009226: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo no nó 2574513689: Nova duração da fase 1 (demanda: 50, total: 50) -> 90.00s
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 431009226: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 431009226: Nenhuma demanda. Duração da fase 1 -> 10.00s
+
+--- Tempo de simulação: 60s (1 min) ---
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 431009226: Nova duração da fase 2 (demanda: 150, total: 150) -> 90.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 90.00s.
+
+--- Tempo de simulação: 120s (2 min) ---
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 431009226 mudou para AMARELO. Tempo na fase verde: 90.00s.
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Veículo 50 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 51 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 52 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 53 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 54 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 55 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 56 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 57 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 58 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 59 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 60 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 61 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 62 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 63 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 64 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 65 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 66 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 67 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 68 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 69 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 70 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 71 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 72 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 73 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 74 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 75 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 76 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 77 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 78 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 79 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 80 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 81 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 82 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 83 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 84 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 85 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 86 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 87 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 88 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 89 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 90 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 91 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 92 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 93 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 94 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 95 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 96 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 97 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 98 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 99 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 100 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 101 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 102 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 103 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 104 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 105 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 106 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 107 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 108 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 109 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 110 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 111 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 112 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 113 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 114 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 115 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 116 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 117 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 118 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 119 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 120 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 121 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 122 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 123 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 124 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 125 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 126 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 127 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 128 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 129 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 130 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 131 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 132 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 133 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 134 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 135 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 136 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 137 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 138 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 139 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 140 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 141 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 142 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 143 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 144 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 145 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 146 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 147 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 148 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 149 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 150 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 151 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 152 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 153 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 154 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 155 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 156 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 157 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 158 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 159 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 160 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 161 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 162 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 163 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 164 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 165 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 166 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 167 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 168 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 169 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 170 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 171 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 172 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 173 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 174 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 175 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 176 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 177 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 178 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 179 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 180 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 181 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 182 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 183 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 184 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 185 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 186 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 187 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 188 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 189 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 190 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 191 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 192 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 193 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 194 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 195 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 196 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 197 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 198 chegou ao destino! Tempo de espera total: 15.00s
+Veículo 199 chegou ao destino! Tempo de espera total: 15.00s
+150 veículos chegaram ao destino. Restam 50 ativos.
+Semáforo no nó 431009226: Nova duração da fase 1 (demanda: 50, total: 50) -> 90.00s
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+
+--- Tempo de simulação: 180s (3 min) ---
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 1 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+
+--- Tempo de simulação: 240s (4 min) ---
+Semáforo no nó 2574513689: Nenhuma demanda. Duração da fase 2 -> 10.00s
+Semáforo no nó 2574513689 mudou para AMARELO. Tempo na fase verde: 10.00s.
+Veículo 0 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 1 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 2 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 3 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 4 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 5 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 6 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 7 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 8 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 9 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 10 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 11 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 12 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 13 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 14 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 15 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 16 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 17 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 18 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 19 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 20 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 21 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 22 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 23 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 24 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 25 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 26 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 27 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 28 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 29 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 30 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 31 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 32 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 33 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 34 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 35 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 36 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 37 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 38 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 39 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 40 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 41 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 42 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 43 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 44 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 45 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 46 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 47 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 48 chegou ao destino! Tempo de espera total: 80.00s
+Veículo 49 chegou ao destino! Tempo de espera total: 80.00s
+50 veículos chegaram ao destino. Restam 0 ativos.
+Todos os veículos chegaram aos seus destinos. Fim da simulação antecipado.
+
+Simulação concluída.
+
+--- Resumo da Simulação ---
+Total de veículos que chegaram: 200
+Tempo de espera total acumulado: 6250.00s
+Tempo de espera médio por veículo: 31.25s

@@ -31,7 +31,7 @@ int main() {
         //file_data.open("src/input/data1.txt");
         file_data.open("src/input/data2.txt");
 
-        int n, m, N = 350;
+        int n, m, N = 250;
         file_data >> n >> m;
             
         //vector <pair<int, int>> edges;
@@ -69,6 +69,7 @@ int main() {
 
         vector <vector <int>> dist = floyd_warshall(n, adj_matrix);
 
+        /*
         for (int i = 0; i < n; i++)
         {
             for (int j = 0; j < n; j++)
@@ -78,6 +79,7 @@ int main() {
 
             cout << "\n";
         }
+        */
 
         IloModel model(env);
 
@@ -113,12 +115,9 @@ int main() {
 
         // Restringir vértices com grau <= 2
         for (int i = 0; i < n; ++i)
-        {
             if (num_streets[i] <= 2)
-            {
                 model.add(x[i] == 0);
-            }
-        }
+            
 
 
         IloCplex cplex(model);
@@ -131,7 +130,7 @@ int main() {
 
         if (file_output.is_open()) 
         {
-            
+            cout << "Solution status: " << cplex.getStatus() << endl;
             cout << "Tamanho mínimo da cobertura: " << cplex.getObjValue() << endl;
             cout << "Vértices na cobertura: ";
             for (int i = 0; i < n; ++i) 
